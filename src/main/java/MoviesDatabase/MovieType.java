@@ -4,7 +4,5 @@ public enum MovieType {
     ACTION,
     HORROR,
     DRAMA,
-    COMEDY,;
-
-
+    COMEDY
 }
