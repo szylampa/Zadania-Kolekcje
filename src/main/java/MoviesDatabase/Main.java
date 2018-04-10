@@ -1,7 +1,5 @@
 package MoviesDatabase;
 
-import java.util.Arrays;
-
 //*Movies database:
 //Stwórz enum MovieType który posiada opcje:
 //    ACTION, DRAMA, COMEDY, HORROR
