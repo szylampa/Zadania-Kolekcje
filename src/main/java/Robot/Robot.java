@@ -10,26 +10,26 @@ public class Robot {
     public void poruszRobota(RuchRobota ruchRobota) {
         if (czyWlaczony) {
             if (poziomBaterii > 0) {
+                poziomBaterii = poziomBaterii - ruchRobota.getProcentBaterii();
                 switch (ruchRobota) {
                     case SKOK:
-                        System.out.println("SKOK");
+                        System.out.println("SKOK, obecny poziom baterii = " + poziomBaterii);
                         break;
                     case RUCH_LEWA_REKA:
-                        System.out.println("Ruszylem lewa reka");
+                        System.out.println("Ruszylem lewa reka, obecny poziom baterii = " + poziomBaterii);
                         break;
                     case RUCH_PRAWA_REKA:
-                        System.out.println("Ruszylem prawa reka");
+                        System.out.println("Ruszylem prawa reka, obecny poziom baterii = " + poziomBaterii);
                         break;
                     case KROK_LEWA:
-                        System.out.println("Krok w lewo");
+                        System.out.println("Krok w lewo, obecny poziom baterii = " + poziomBaterii);
                         break;
                     case KROK_PRAWA:
-                        System.out.println("Krok w prawo");
+                        System.out.println("Krok w prawo, obecny poziom baterii = " + poziomBaterii);
                         break;
                 }
-                poziomBaterii = poziomBaterii - ruchRobota.getProcentBaterii();
             } else {
-                System.out.println("Robot rozładowany!");
+                System.out.println("Robot rozładowany! Trzeba naładować robota!");
             }
         } else {
             System.out.println("Robot wylaczony! Aby zaczac sie poruszac najpierw wlacz robota");

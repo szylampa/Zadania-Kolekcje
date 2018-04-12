@@ -20,6 +20,11 @@ public class Main {
         Robot robot = new Robot(100.0, "Bob", false);
         robot.wlaczRobota();
         robot.poruszRobota(RuchRobota.SKOK);
+        robot.poruszRobota(RuchRobota.SKOK);
+        robot.poruszRobota(RuchRobota.SKOK);
+        robot.poruszRobota(RuchRobota.SKOK);
+        robot.poruszRobota(RuchRobota.SKOK);
+        robot.poruszRobota(RuchRobota.SKOK);
         robot.wylaczRobota();
         robot.poruszRobota(RuchRobota.RUCH_LEWA_REKA);
         System.out.println(robot.getPoziomBaterii());
