@@ -1,14 +1,15 @@
 package ShoppingCart;
 
-public enum PodatekProduktu {
-    VAT8(0.08),
-    VAT23(0.23),
-    VAT5(0.05),
-    NO_VAT(0.0);
+public enum  PodatekProduktu {
+    VAT8(8), VAT23(23), VAT5(5), NO_VAT(0);
 
-    private double wartoscPodatku;
+    private int procentPodatku;
 
-    PodatekProduktu(double wartoscPodatku) {
-        this.wartoscPodatku = wartoscPodatku;
+    PodatekProduktu(int procentPodatku) {
+        this.procentPodatku = procentPodatku;
+    }
+
+    public int getProcentPodatku() {
+        return procentPodatku;
     }
 }
